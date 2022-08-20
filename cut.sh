@@ -10,3 +10,8 @@ while read -r line || [ -n "$line" ]
 do
     echo $line | cut -c 2-7 -
 done  
+#print the each line contain the range of chracters contain just the first four characters of the corresponding input line.
+while read -r line || [-n "$line"]
+do
+    echo $line | cut -c 0-4 -
+done
