@@ -17,3 +17,10 @@ do
 done
 #Given a tab delimited file with several columns (tsv format) print the first three fields.
 cut -f 1-3
+#print the characters from thirteenth position to the end.
+cut -c 13-
+#For each input sentence, identify and display its fourth word. Assume that the space (' ') is the only delimiter between words.
+while read line
+do
+    echo $line | cut -d ' ' -f 4
+done
