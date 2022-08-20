@@ -15,3 +15,5 @@ while read -r line || [-n "$line"]
 do
     echo $line | cut -c 0-4 -
 done
+#Given a tab delimited file with several columns (tsv format) print the first three fields.
+cut -f 1-3
