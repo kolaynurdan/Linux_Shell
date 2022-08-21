@@ -4,3 +4,5 @@ awk '{ total=$2+$3+$4; avg=total/3; print $0 " : " (avg > 50 ? avg > 60 ? avg > 
 awk 'END{ if((NR%2)) print p ";" }!(NR%2){ print p ";" $0 }{ p = $0 }'
 #Only 2 scores have been provided for student B and student C.
 awk '{if(length($4)==0) print "Not all scores are available for " $1}'
+#Only student C and student D have scored >=50 in all three subjects.
+awk '{print $1 ($2 <50 || $3 <50 || $4 <50 ? " : Fail" : " : Pass")}'
