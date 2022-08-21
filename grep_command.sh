@@ -4,3 +4,5 @@ grep -w 'the'
 grep -iw 'the'
 #Only display those lines that do NOT contain the word 'that'. The relative ordering of the lines should be the same as it was in the input file.
 grep -iv 'that'
+#Display the required lines without any changes to their relative ordering.
+grep -iw 'the\|that\|then\|those'
