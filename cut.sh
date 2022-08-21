@@ -26,3 +26,7 @@ do
 done
 #The output should contain N lines. For each input sentence, identify and display its first three words. Assume that the space (' ') is the only delimiter between words. 
 cut -d " " -f 1-3
+#display the first 20 lines of an input file.
+head -n 20
+#display the first 20 character of text file.
+head -c 20
