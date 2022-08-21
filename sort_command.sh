@@ -10,3 +10,5 @@ sort -nr
 sort -n -k2 -r -t $'\t'
 #The data has been sorted in ascending order of the average monthly temperature in January (i.e, the second column).
 sort -t$'\t' -n -k2
+#Sort the data in descending order of the average monthly temperature in January.
+sort -k2 -nr -t$'|'
